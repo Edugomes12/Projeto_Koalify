@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,13 +15,13 @@
         </a>
         <img src="/img/koalify.png" alt="mascote Koalify">
     </header>
-    
+
 <main>
     <div class="container">
       <div class="form-area">
         <h1>Crie Sua Conta</h1>
         <p>Comece a organizar seus projetos</p>
-        <form>
+        <form id="formCadastro">
             <label for="nome">Nome Completo</label>
             <input type="text" id="nome" name="nome" placeholder="Seu Nome">
 
@@ -31,9 +31,9 @@
             <label for="senha">Senha</label>
             <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
 
-            <label for="Confirmar senha">Confirmar Senha</label>
-            <input type="password" id="Confirmar senha" placeholder="Confirmar Senha"> 
-            
+            <label for="confirmarSenha">Confirmar Senha</label>
+            <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirmar Senha">
+
             <button type="submit">Cadastrar</button>
         </form>
       </div>
@@ -43,6 +43,8 @@
         <p>Junte-se a nos e organize<br>seus projetos com a <br> Koalify.</p>
       </div>
     </div>
-    
+  </main>
+
+  <script src="/js/cadastro.js"></script>
 </body>
 </html>
