@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Koalify – Meus Projetos</title>
+  <link rel="stylesheet" href="/css/mprojetos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar">
+
+    <div class="sidebar-top">
+      <button class="btn-back" aria-label="Voltar">&#9664;</button>
+      <div class="logo">
+        <img src="https://api.dicebear.com/7.x/bottts/svg?seed=koala&backgroundColor=b6e3f4" alt="Koalify logo" class="logo-img" />
+        <span class="logo-text">Koalify</span>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="#" class="nav-item active" data-page="projetos">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2"/>
+            <path d="M8 21h8M12 17v4"/>
+            <path d="M7 8h10M7 12h6"/>
+          </svg>
+        </span>
+        <span class="nav-label">Meus Projetos</span>
+      </a>
+
+      <a href="#" class="nav-item" data-page="atividades">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+            <path d="M4.93 4.93a10 10 0 0 0 0 14.14"/>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+            <path d="M8.46 8.46a5 5 0 0 0 0 7.07"/>
+          </svg>
+        </span>
+        <span class="nav-label">Atividades</span>
+      </a>
+
+      <a href="#" class="nav-item" data-page="lixeira">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="3 6 5 6 21 6"/>
+            <path d="M19 6l-1 14H6L5 6"/>
+            <path d="M10 11v6M14 11v6"/>
+            <path d="M9 6V4h6v2"/>
+          </svg>
+        </span>
+        <span class="nav-label">Lixeira</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <a href="#" class="nav-item" data-page="perfil">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+          </svg>
+        </span>
+        <span class="nav-label">Perfil</span>
+      </a>
+
+      <a href="#" class="nav-item" data-page="sair">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+            <polyline points="16 17 21 12 16 7"/>
+            <line x1="21" y1="12" x2="9" y2="12"/>
+          </svg>
+        </span>
+        <span class="nav-label">Sair</span>
+      </a>
+    </div>
+
+  </aside>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main-content">
+
+    <header class="main-header">
+      <div class="header-title-group">
+        <h1 class="page-title">Meus Projetos</h1>
+        <p class="page-subtitle">Aqui estão todos os projetos que você criou</p>
+      </div>
+
+      <div class="header-actions">
+        <div class="search-wrapper">
+          <input type="text" class="search-input" placeholder="Buscar projetos" id="searchInput" />
+          <button class="search-btn" aria-label="Buscar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="7"/>
+              <line x1="17" y1="17" x2="22" y2="22"/>
+            </svg>
+          </button>
+        </div>
+        <button class="btn-novo" id="btnNovoProjeto">+ Novo projeto</button>
+      </div>
+    </header>
+
+    <div class="divider"></div>
+
+    <section class="projects-area" id="projectsArea">
+      <div class="empty-state" id="emptyState">
+        <p>Sua lista de projetos está vazia,<br>mas não por muito tempo.<br>Vamos começar?</p>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </section>
+
+  </main>
+
+  <!-- ===== MODAL ===== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <h2 class="modal-title" id="modalTitle">Novo projeto</h2>
+      <label class="modal-label" for="projectName">Nome do projeto</label>
+      <input type="text" class="modal-input" id="projectName" placeholder="Ex.: Meu app incrível" maxlength="60" />
+      <div class="modal-actions">
+        <button class="btn-cancel" id="btnCancelModal">Cancelar</button>
+        <button class="btn-criar" id="btnCriarProjeto">Criar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/mprojetos.js"></script>
+</body>
+</html>

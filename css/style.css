@@ -1,0 +1,237 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 48px;
+  border-bottom: 0.5px solid #e5e5e5;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #6C63FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn-outline {
+  padding: 8px 20px;
+  border: 1.5px solid #111;
+  border-radius: 999px;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #111;
+  transition: background 0.15s;
+}
+
+.btn-outline:hover {
+  background: #f4f4f4;
+}
+
+.btn-solid {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 999px;
+  background: #111;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  transition: opacity 0.15s;
+}
+
+.btn-solid:hover {
+  opacity: 0.85;
+}
+
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 48px;
+  padding: 72px 48px 64px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero-tag {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hero-tag::before {
+  content: '*';
+  color: #6C63FF;
+  font-size: 18px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 18px;
+  color: #111;
+}
+
+.hero p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 32px;
+  max-width: 380px;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-btn-primary {
+  padding: 12px 28px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.hero-btn-primary:hover {
+  opacity: 0.85;
+}
+
+.hero-btn-secondary {
+  padding: 12px 28px;
+  background: transparent;
+  color: #111;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.hero-btn-secondary:hover {
+  border-color: #888;
+}
+
+/* KANBAN PREVIEW */
+.kanban-preview {
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  padding: 20px;
+  background: #fafafa;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+.kanban-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.kanban-col-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.kanban-card-top {
+  height: 52px;
+  border-radius: 8px;
+}
+
+.card-red    { background: #f87171; }
+.card-yellow { background: #fbbf24; }
+.card-green  { background: #4ade80; }
+
+.kanban-line {
+  height: 8px;
+  border-radius: 4px;
+  background: #e5e5e5;
+}
+
+.kanban-line.short {
+  width: 70%;
+}
+
+/* FEATURES */
+.features {
+  border-top: 0.5px solid #e5e5e5;
+  padding: 40px 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.feature-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+}
+
+.feature-desc {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.5;
+}

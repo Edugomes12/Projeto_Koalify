@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap'); 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    background-color: #fcfcfc;
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------PARTE 1 DO SITE------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------------------- */
+nav{
+    width: 25%;
+    height: 100vh;
+    border-right: 2px solid;    
+    position: relative;
+}
+
+.logos{
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+}
+
+.logos img{
+    height: 100px;
+}
+
+
+#seta{
+    font-size: 60px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+#seta:hover{
+ background-color: rgba(0, 0, 0, 0.315);
+}
+
+.opcoes{
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes i{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 60px;
+    padding-left: 20px;
+    margin-top: 30px;
+    align-items: center;
+     cursor: pointer;
+}
+
+.opcoes i:hover{
+    background-color: rgba(0, 0, 0, 0.315);
+}
+
+
+.opcoes i p {
+    padding-left: 10px;
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.sair{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 20px ;
+}
+
+
+.sair i {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 60px;
+    padding-left: 20px;
+    margin-top: 30px;
+    align-items: center;
+     cursor: pointer;
+}
+
+.sair i:hover{
+    background-color: rgba(0, 0, 0, 0.315);
+}
+
+
+.sair p{
+     padding-left: 10px;
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 20px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------PARTE 1 DO SITE------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------PARTE 2 DO SITE------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------------------- */
+.conteudo-1{
+    width: 50%;
+}
+
+.logos2{    
+    padding-left: 25px;
+}
+
+.conteudo-1 i {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 30px;
+    align-items: center;
+     cursor: pointer;
+}
+
+.conteudo-1 i p{
+    padding-left: 20px;
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+
+.formulario{
+
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formulario h1{
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 500;
+  margin-left: 10%;
+}
+
+.formulario h2{
+     font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 16.5px;
+  font-weight: 400;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+.formulario label{
+    margin-top: 20px;
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 16.5px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 10%;
+}
+
+.formulario .valores-texto{
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    width: 50%;
+    background-color: #ececec;
+    font-size: 15px;
+    width: 70%;
+    margin-left: 10%;
+}
+
+#botao-criar{
+    padding: 12px;
+    width: 50%;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 120px;
+    margin-left: 20%;
+    cursor: pointer;
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------PARTE 2 DO SITE------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------PARTE 3 DO SITE------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+.conteudo-2{
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.conteudo-2 h1{
+      font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.conteudo-2 h2{
+      font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 20px;
+
+}
